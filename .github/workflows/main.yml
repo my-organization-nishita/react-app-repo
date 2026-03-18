@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Debug Secrets
+        run: echo "Secrets loaded"
+
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v2
         with:
